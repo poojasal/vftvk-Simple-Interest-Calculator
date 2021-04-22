@@ -1,4 +1,122 @@
-body {background-color:tan;}
-h1{color:green;}
+/* set the body background color black etc */
+body {
+  background-color: black;
+  align-items: center;
+  
+}
 
+/* set properties of main division section, background color, margin, alignment etc. */
+/* setting all such so app looks to similar as given in pic of final project introduction */
+#canv {
+  background-color: white; 
+  width: 450px;
+  border-radius: 25px;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
+/* to set parameters of component principal amount, interest rate, years, button */
+.com1 {
+  font-family: "arial", sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+  margin-left: 75px;
+}
+
+/* to set heading margin */
+#head1 {
+  margin-top: 20px;
+  margin-left: 0px;
+ }
+/* to set heading parameters */
+.heading1 {
+  margin-top: 0px;
+  margin-left: 0px;
+  font-family: "Verdana", sans-serif, monospace;
+  font-weight : bold;
+  font-size: 30px;
+  color: gray;
+}
+
+/* to set interest rate slider width and margin */
+#iir {
+  margin-left: 25px;
+  width: 120px;
+  border-radius: 8px;
+}
+/* to set principal amount width, border radius and margin */
+#ipa {
+  margin-left: 60px;
+  width: 120px;
+  border-radius: 4px;
+}
+/* to set year dropdown margin */
+.in1{
+  margin-top: 0px;
+  margin-left: 30px;
+  border-radius: 4px;
+}
+/* to set margin and all to scrolling dropdown */
+#f2 {
+  margin-top: 10px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-left:0px;
+}
+
+#f21 {
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+#f22 {
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-left:0px;
+  display: none;
+}
+
+#op1 {
+  display: none;
+}
+
+#op2 {
+  display: none;
+}
+/* end of set margin and all to scrolling dropdown */
+#p1 {
+  color: white;
+}
+
+/* to give button border radius */
+#dbutton {
+  border-radius: 8px;
+}
+
+/* to hide the result paragraph initially */
+#dpar {
+  display: none;
+}
+/* to highlight result numbers */
+.result1 {
+  font-style: normal;
+  background-color: yellow;
+}
+
+/* to set parameters of footer such as font, size, margin etc. */
+#foot {
+   margin-top: 10px;
+   font-family: "Helvetica", sans-serif;
+  font-size: 15px;
+  color: black;
+ }

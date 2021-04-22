@@ -1,16 +1,82 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width= device-width, initial-scale=1.0">
+        <title>Web App – Simple Interest Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
+
     <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div id="canv"> <!--the whole division of interest calculator-->
+           <div id="head1"> <!--heading of web app interest calculator-->
+              <p class="heading1">Simple Interest Calculator</p> 
+           </div>
 
-        <button onclick="compute()">Compute</button>
+            <div id="dpamount" class="com1">  <!-- principal amount section-->
+                <label id="lpa">Amount</label>
+                <input id="ipa" type="number">
+            </div>
+
+            <div id="dinterest" class="com1"> <!--interest slider section-->
+                <label id="lir">Interest Rate</label>
+                <input id="iir" type="range" min="1" max="20" value="10" step="0.25" onchange="displayir()">
+                <span id="oir" for="iir">10.25</span>%
+            </div>
+
+            <div id="dyear" class="com1"> <!--year selection dropdown with scrolling-->
+            
+                
+              <div id="f2"> 
+                <div id="f21">No. of Years 
+                    <select id="syear1" overflow-y="scroll-up" onclick="appeary()" class="in1">No. of Years
+                        <option id="op1" value="1">1</option>
+                    </select>
+                </div>
+                
+                <div id="f22">
+                <div id="f31">No. of Years
+                <select id="syear21" overflow-y="scroll-up" onclick="dispyear1()" class="in1"> 
+                        <option id="op2" value="1">1</option>
+                    </select>
+                </div>
+                <div id="f32"><var id="p1"> No. of Years</var>
+                  <select id="syear" overflow="scroll" size="5" onclick="dispyear()" class="in1">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>                      
+                  </select>
+                  </div>
+                </div>
+               </div> 
+            </div>
+
+            <div id="dbutton" class="com1"> <!--buttton to calculate interest-->
+                <button id="but1" onclick="mess1()">Compute Interest</button>
+            </div>
+
+            <div id="dpar" class="com1"> <!--section showing result paragraph-->
+                <p id="par">If you deposit <var id="pa" class="result1"></var>,<br>
+                    at an interest rate of <var id="ir" class="result1"></var><var id="perc1" class="result1">%</var>. <br>
+                    You will receive an amount of <var id="famount" class="result1"></var>,<br>
+                    in the year <var id="vyear" class="result1"></var>
+                </p>
+            </div>
+
+            <footer id="foot"> <!--footer section-->
+                &copy; Everyone Can Get Rich
+            </footer>
+
+        </div>
+       
     </body>
 </html>
